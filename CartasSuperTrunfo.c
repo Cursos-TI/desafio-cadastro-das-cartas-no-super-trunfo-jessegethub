@@ -1,22 +1,105 @@
 #include <stdio.h>
+int main () {
+   
+    // Variáveis da carta 1
+    char estado1;
+    char codigo1[30];
+    char cidade1[30];
+    int população1;
+    float área1;
+    float pib1;
+    int pontos1;
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    // Variáveis da carta 2
+    char estado2;
+    char codigo2[30];
+    char cidade2[30];
+    int população2;
+    float área2;
+    float pib2;
+    int pontos2;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    /* Primeira parte contendo a solicitão de informação ao usuário ocorrrendo a
+    entrada de dados da carta nº1*/
+    printf("Carta 1\n");
+    printf("Digite uma Letra: ");
+    scanf(" %c", &estado1);
+
+    printf("Código da carta: ");
+    scanf("%s", &codigo1);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", &cidade1);
+
+    printf("Digite qual o número de habitantes: ");
+    scanf("%d", &população1);
+
+    printf("Área de extensão: ");
+    scanf("%f", &área1);
+
+    printf("Digite qual o PIB dessa cidade: ");
+    scanf("%f", &pib1);
+
+    printf("Quantidade de pontos turísticos:");
+    scanf("%d", &pontos1);
+
+    printf("\nCarta 1 registrada!\n\n ");
+
+    // Entrada de dados da Carta 2
+    printf("Carta 2\n");
+    printf("Digite uma Letra: ");
+    scanf(" %c", &estado2);
+
+    printf("Código da carta: ");
+    scanf("%s", &codigo2);
+
+    printf("Digite o nome da cidade: ");
+    scanf("%s", &cidade2);
+
+    printf("Digite qual o número de habitantes: ");
+    scanf("%d", &população2);
+
+    printf("Área de extensão: ");
+    scanf("%f", &área2);
+
+    printf("Digite qual o PIB dessa cidade: ");
+    scanf("%f", &pib2);
+
+    printf("Quantidade de pontos turísticos:");
+    scanf("%d", &pontos2);
+
+    printf("\nCarta 2 registrada!\n\n ");
+
+    /* Nessa parte do código está inserido as informaçãoes para a saída de dados
+    apresentando ao usuário as informações descritas anteriormente */
+    // Exibição carta 1
+    printf("Resultado!\n");
+    printf("\nCarta 1\n");  
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Cidade: %s\n", cidade1);
+    printf("População: %d\n", população1);
+    printf("Área (km²): %.2f km²\n", área1);  
+        /*Inseri após o especificador, os caracteres "km²" para aparecer somente na 
+        sáida de dados, assim, o usuário não precisa colocar essa informação no momento
+        da entrada/solicitação de dados */
+    printf("PIB: R$%.2f\n", pib1); 
+        /*Nesse caso também inseri antes do especificador os caracateres "R$" para 
+        indiciar valores em formatação de moeda ao usuário na saída de dados*/
+    printf("Quantidade de pontos turísticos: %d\n", pontos1);
+
+
+    // Exibição carta 2
+    printf("\nCarta 2\n");  
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Cidade: %s\n", cidade2);
+    printf("População: %d\n", população2);
+    printf("Área (km²): %.2f km²\n", área2);  
+    printf("PIB: R$%.2f\n", pib2); 
+    printf("Quantidade de pontos turísticos: %d\n", pontos2);
+
 
     return 0;
+    
 }
