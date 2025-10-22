@@ -9,6 +9,8 @@ int main () {
     float área1;
     float pib1;
     int pontos1;
+    float densidadep1;
+    float pibperc1;
 
     // Variáveis da carta 2
     char estado2;
@@ -18,6 +20,8 @@ int main () {
     float área2;
     float pib2;
     int pontos2;
+    float densidadep2;
+    float pibperc2;
 
     /* Primeira parte contendo a solicitão de informação ao usuário ocorrrendo a
     entrada de dados da carta nº1*/
@@ -42,6 +46,9 @@ int main () {
 
     printf("Quantidade de pontos turísticos:");
     scanf("%d", &pontos1);
+
+    densidadep1 = população1 / área1;
+    pibperc1 = pib1 / população1;
 
     printf("\nCarta 1 registrada!\n\n ");
 
@@ -68,6 +75,9 @@ int main () {
     printf("Quantidade de pontos turísticos:");
     scanf("%d", &pontos2);
 
+    densidadep2 = população2 / área2;
+    pibperc2 = pib2 / população2;
+
     printf("\nCarta 2 registrada!\n\n ");
 
     /* Nessa parte do código está inserido as informaçãoes para a saída de dados
@@ -87,6 +97,8 @@ int main () {
         /*Nesse caso também inseri antes do especificador os caracateres "R$" para 
         indiciar valores em formatação de moeda ao usuário na saída de dados*/
     printf("Quantidade de pontos turísticos: %d\n", pontos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadep1);
+    printf("PIB per Capita:: %.2f reais\n", pibperc2);
 
 
     // Exibição carta 2
@@ -98,6 +110,8 @@ int main () {
     printf("Área (km²): %.2f km²\n", área2);  
     printf("PIB: R$%.2f\n", pib2); 
     printf("Quantidade de pontos turísticos: %d\n", pontos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidadep2);
+    printf("PIB per Capita:: %.2f reais\n", pibperc2);
 
 
     return 0;
